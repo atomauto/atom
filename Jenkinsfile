@@ -9,5 +9,6 @@ pipeline {
             steps {
                 echo 'Building...'
             }
-    }
-}
+            }
+            }
+        }
