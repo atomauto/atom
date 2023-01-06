@@ -1,5 +1,5 @@
 # atom
-In this project there are some samples of my old PHP code for managing prices, saving stocks in database and etc.
+> In this project there are some samples of my old PHP code for managing prices, saving stocks in database and etc.
 В данный момент загружен небольшой фрагмент неоптимизированного кода для работы с email-рассылкой прайса определенным поставщиком запчастей
 Скрипт `price.php` загружает из почты Яндекса самое последнее непрочитанное письмо с прайсом от поставщика, распаковывает файл из zip архива,
 далее загружает все данные в СУБД.
