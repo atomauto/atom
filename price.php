@@ -88,7 +88,6 @@ if ($emailNumbers) {
             }
             zip_close($zip);
 
-
             //        while ($sheetData[++$i]['A'] != null) {
             //            $position->order = $sheetData[$i]['B'];
             //            $position->article = Api::cleanArticle($sheetData[$i]['C']);
@@ -126,8 +125,6 @@ if ($emailNumbers) {
     echo "<pre>";
     $DbSupplierStock->deleteDb([], true);
     while (($data = fgetcsv($handle, 0, ';')) !== false) {
-
-
         $position->supplierProductCode = $data[0];
         $position->brand = ucwords(strtolower($data[1]));
         $position->article = $data[2];
@@ -184,9 +181,5 @@ if (!is_dir($folder)) {
     mkdir($folder);
 }
 rename('attachment/' . $entry, $folder . "archive_" . date("d.m.Y H:i:s") . ".zip");
-
-
-
-
 
 echo 'Время выполнения скрипта: <strong>' . round(microtime(true) - $start, 4) . '</strong> сек.';
