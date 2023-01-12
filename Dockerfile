@@ -1,2 +1,2 @@
-FROM trafex/php-nginx
+FROM atomauto/php-nginx-light
 COPY ./* /var/www/html/
