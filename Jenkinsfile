@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'webdevops/php-nginx-dev'
+            image 'webdevops/php-nginx-dev:8.2'
             }
     }
     stages {
