@@ -1,7 +1,10 @@
 pipeline {
     agent {
         docker {
-            image 'webdevops/php-nginx-dev:8.2'
+            dockerfile {
+            label 'atom-staging-'
+            additionalBuildArgs  "--build-arg version=1.0.${env.BUILD_ID}"
+            }
             }
     }
     stages {
